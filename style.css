@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    /* font-size: 20px; */
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(to bottom, red, white);
+}
+
+#container {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+#pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+#mini_poke {
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    transform: translate(-25%, -25%);
+    height: 17%;
+}
+
+#pokemon_data {
+    font-size: clamp(2px, 4vw, 18px);
+    position: absolute;
+    bottom: 40.5%;
+    right: 22%;
+    font-weight: 400;
+    color: #666;
+    font-size: clamp(4px, 5vw, 20);
+}
+
+#pokemon_name {
+    text-transform: capitalize;
+    color: #333;
+}
+
+#search_pokemon {
+    position: absolute;
+    top: 66%;
+    left: 16%;
+    width: 60%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: clamp(4px, 3vw, 15px);
+    box-shadow: -3px 3px #888, -5px 5px #222;
+}
+
+.btn_next{
+    top:80%;
+    right: 23%; 
+}
+
+.btn_prev{
+    top:80%;
+    left:15%; 
+}
+
+.buttons{
+    border-radius: 5px;
+    background-color: #ccc;
+    position: absolute;
+    padding: 2%;
+    font-size: clamp(4px, 3vw, 15px);
+    box-shadow: -3px 3px #888, -5px 5px #222;
+}
+
+.buttons:active{
+    box-shadow: 1px -1px #888, 3px -3px #222;
+    background-color: #fff;
+}
