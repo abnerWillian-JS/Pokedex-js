@@ -32,6 +32,8 @@ const render_pokemon = async (pokemon) => {
         ['animated']['front_default']
         data_name.innerHTML = data.name
         number.innerHTML = data.id
+        searchPoke = data.id
+        
     } else {
         data_name.innerHTML = 'Não encontrado'
         number.innerHTML = ''
@@ -46,8 +48,9 @@ form.addEventListener("submit", (event) => {
 })
 
 btnPrev.addEventListener("click", () => {
+    if(searchPoke > 1){
     searchPoke -= 1
-    render_pokemon(searchPoke)
+    render_pokemon(searchPoke)}
  })
 
  btnNext.addEventListener("click", () => {
